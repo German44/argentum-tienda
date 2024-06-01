@@ -1,20 +1,20 @@
 import { useRef } from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
 
-const Carousel = () => {
-  const carouselRef = useRef(null);
+const BannerTop = () => {
+  const bannerRef = useRef(null);
 
   const handleClose = () => {
-    if (carouselRef.current) {
-      carouselRef.current.classList.add("hidden");
+    if (bannerRef.current) {
+      bannerRef.current.classList.add("hidden");
     }
   };
 
   return (
     <>
       <div
-        id="carousel"
-        ref={carouselRef}
+        id="banner"
+        ref={bannerRef}
         className="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
       >
         <div
@@ -62,7 +62,7 @@ const Carousel = () => {
         </div>
         <div className="flex flex-1 justify-end">
           <button
-            id="carousel-button"
+            id="banner-button"
             type="button"
             className="-m-3 p-3 focus-visible:outline-offset-[-4px]"
             onClick={handleClose}
@@ -76,4 +76,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default BannerTop;

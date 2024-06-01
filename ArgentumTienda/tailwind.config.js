@@ -14,8 +14,8 @@ export default {
     },
   },
   plugins: [require("daisyui")],
-  daisyui: {
+  /* daisyui: {
     prefix: "daisy-",
-  },
+  }, */
   darkMode: "class",
 };
