@@ -13,9 +13,14 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
-  /* daisyui: {
+  plugins: [
+    require("daisyui"),
+    require('@tailwindcss/aspect-ratio')
+  ],
+  /* Uncomment this section if you need a prefix for DaisyUI classes
+  daisyui: {
     prefix: "daisy-",
-  }, */
+  },
+  */
   darkMode: "class",
 };
